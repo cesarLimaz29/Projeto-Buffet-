@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <title>Loussur Buffet</title>
+            <link rel="stylesheet" type="text/css" href="Css/reset.css">
+            <link rel="stylesheet" type="text/css" href="Css/fale.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="icon" href="Images/logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster&display=swap" rel="stylesheet">
+            
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!----NavgationBar---->
+  <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img src="Images/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+   <i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+    
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Cardápio
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="churra.html">Churrasco</a>
+          <a class="dropdown-item" href="coque.html">Coquetel</a>
+          <a class="dropdown-item" href="jantar.html">Jantar</a>
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Galeria
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="gkids.html">Festa Infantil</a>
+          <a class="dropdown-item" href="gdebutant.html">Debutante</a>
+          <a class="dropdown-item" href="gcasamento.html">Casamento</a>
+        </div>
+      </li>
+     
+          <li class="nav-item">
+        <a class="nav-link" href="fale.html">Fazer Orçamento</a>
+      </li>
+     
+     
+    </ul>
+      
+      <ul class="right-menu ml-auto">
+        <li><i class="fa fa-facebook"></i></li>
+           <li><i class="fa fa-instagram"></i></li>
+           <li><i class="fa fa-whatsapp"></i></li>
+          <li>
+            <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Pesquisar">
+  <div class="input-group-append">
+    <span class="input-group-text"><i class="fa fa-search"></i></span>
+  </div>
+</div>
+          </li>
+      </ul>
+  </div>
+       
+</nav>
+        </section>
+       
+        <script type="text/javascript">
+            function calc(){
+               var qtd = parseInt(document.getElementById('txtCon').value);
+                tot = qtd * 20;
+                document.getElementById('txtOr').value = tot;   
+               
+                
+                document.getElementById('txtNome').value = document.getElementById('txtNom').value;
+                document.getElementById('txtEmail').value = document.getElementById('id2').value;
+            }
+        
+        </script>
+            
+           <div class="form-style-6">
+<h1 class="h11">Fale Conosco</h1>
+<form oninput="calc():">
+<input type="text" name="field1" id="txtNom" placeholder="Nome" />
+<input type="email" name="field2" id="id2" placeholder="Email" />
+    <input type="text" name="txtCon" id="txtCon" placeholder="Número de convidados" />
+    <select name="slcFormacao" id="slcFormacao">
+                <option>Tipo de evento:</option>
+                 <option>Infantil</option>
+                 <option>Debutante</option>
+                 <option>Noivado</option>
+                 <option>Casamento</option>
+            
+            
+            </select>
+    <input type="date" name="dtE" id="dtE" placeholder="Data do evento">
+    
+    <input type="text" name="field1" placeholder="Telefone" />
+       <select name="slcFormacao" id="slcFormacao">
+                <option>Como conheceu o espaço:</option>
+                 <option>Facebook</option>
+                 <option>Instagram</option>
+                 <option>Youtube</option>
+                 <option>Internet/Google</option>
+                <option>Indicação</option>
+                <option>Blog</option>
+                <option>Outros</option>
+            
+            
+            </select>
+<textarea name="field3" placeholder="Observação..."></textarea>
+ 
+
+<input type="button"  value="Enviar" onclick="calc()"/>
+</form>
+               
+               
+</div>
+        
+         <div class="form-style-6">
+<h1 class="h11">Orçamento</h1>
+<form oninput="calc():">
+<input type="text" name="field1" id="txtNome" placeholder="Nome" />
+<input type="email" name="field2" id="txtEmail" placeholder="Email" />
+    <input type="text" name="txtOr" id="txtOr" placeholder="Valor Total" />
+
+
+</form>
+               
+               
+</div>
+        <style type="text/css">
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+   
+
+}
+.form-style-6 h1{
+	background: #333;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #333;
+	padding: 3%;
+	border: 1px solid #333;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #333;
+	border-bottom: 2px solid #333;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+	background: #555;
+}
+            .form-style-6 input[type="submit"]{
+                background: #333;
+            }
+</style>
+          <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-items">
+                    <h1 class="h1">Buffet</h1>
+                    <p>
+                       Nossos buffets são completos, temos diversão para as crianças! Temos uma comida deliciosa capaz de deixar qualquer um com àgua na boca! Temos uma maravilhosa receção e muito conforto para Você e sua família! Tá esperando o que?! Reserve a sua festa aqui!
+                    </p>
+                </div>
+                
+                 <div class="footer-items">
+                    <h2 class="h2">Links</h2>
+                    <div class="border"></div>
+                     <ul>
+                           <a href=""><li>Home</li></a>
+                           <a href=""><li>Cardápio</li></a>
+                           <a href=""><li>Galeria</li></a>
+                           <a href=""><li>Fale Conosco</li></a>
+                     </ul>
+                </div>
+                
+                  <div class="footer-items">
+                    <h2 class="h2">Serviços</h2>
+                    <div class="border"></div>
+                     <ul>
+                           <a href=""><li>Festa Infantil</li></a>
+                           <a href=""><li>Debutante</li></a>
+                           <a href=""><li>Noivado</li></a>
+                           <a href=""><li>Casamento</li></a>
+                     </ul>
+                </div>
+                
+                <div class="footer-items">
+                    <h2 class="h2">Contato</h2>
+                    <div class="border"></div>
+                     <ul>
+                         <li><i class="fa fa-map-marker" aria-hidden="true"></i>Cidade Tiradentes, SP - São Paulo</li>
+                           <li><i class="fa fa-phone" aria-hidden="true"></i>11 9564-8832</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>thallesgabriel1307@gmail.com</li>
+                     </ul>
+                    <div class="social-media">
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                
+            
+            
+            </div>
+            <div class="footer-bottom">
+                Copryrigth &copy; Thalles & César 2019. All rights reserved.
+            </div>
+        </div>
+    </body>
+</html>

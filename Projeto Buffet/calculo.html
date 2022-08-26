@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>
+            Calculo
+        </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="Css/cal.css">
+    </head>
+    <body>
+        <form name="calcular">
+            <label>N1:</label>
+            <input type="text" id="n1" name="n1">
+            <label>N2:</label>
+            <input type="text" id="n2" name="n2">
+            <br>
+            <input type="button" value="+" onclick="somar()">
+              <input type="button" value="-"onclick="subtrair()">
+              <input type="button" value="x"onclick="multiplicar()">
+              <input type="button" value="/" onclick="dividir()">
+        </form>
+        
+    <script type="text/javascript">
+            function somar(){
+                var n1,n2,sm;
+                n1=parseInt(document.getElementById("n1").value);
+                n2=parseInt(document.calcular.n2.value);
+                sm=n1+n2;
+                alert(sm);
+            }
+        
+              function subtrair(){
+                var n1,n2,sm;
+                n1=parseInt(document.getElementById("n1").value);
+                n2=parseInt(document.calcular.n2.value);
+                sm=n1-n2;
+                alert(sm);
+            }
+              function multiplicar(){
+                var n1,n2,sm;
+                n1=parseInt(document.getElementById("n1").value);
+                n2=parseInt(document.calcular.n2.value);
+                sm=n1*n2;
+                alert(sm);
+            }
+              function dividir(){
+                var n1,n2,sm;
+                n1=parseInt(document.getElementById("n1").value);
+                n2=parseInt(document.calcular.n2.value);
+                sm=n1/n2;
+                alert(sm);
+            }
+        
+        
+        
+        </script>
+    <nav id="nav-1">
+  <a class="link-1" href="#">Home</a>
+  <a class="link-1" href="#">About</a>
+  <a class="link-1" href="#">Contact</a>
+  <a class="link-1" href="#">Shop</a>
+</nav>
+
+<nav id="nav-2">
+  <a class="link-2" href="#">Home</a>
+  <a class="link-2" href="#">About</a>
+  <a class="link-2" href="#">Contact</a>
+  <a class="link-2" href="#">Shop</a>
+</nav>
+
+<nav id="nav-3">
+  <a class="link-3" href="#">Home</a>
+  <a class="link-3" href="#">About</a>
+  <a class="link-3" href="#">Contact</a>
+  <a class="link-3" href="#">Shop</a>
+</nav>
+        
+        <ul class="snip1226">
+  <li class="current"><a href="#" data-hover="Home">Home</a></li>
+  <li><a href="#" data-hover="About Us">About Us</a></li>
+  <li><a href="#" data-hover="Blog">Blog</a></li>
+  <li><a href="#" data-hover="Services">Services</a></li>
+  <li><a href="#" data-hover="Products">Products</a></li>
+  <li><a href="#" data-hover="Contact">Contact</a></li>
+</ul>
+    </body>
+</html>
